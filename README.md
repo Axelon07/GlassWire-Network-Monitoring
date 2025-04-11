@@ -21,6 +21,7 @@ Simulated suspicious behavior using Angry IP Scanner:
 ## 📂 Project Files
 - `glasswire-settings.txt` – Manual config snapshot
 - `simulate-threat.txt` – Steps to simulate a network scan
+- `document-findings.txt` – Full docs explaining issues and project findings
 - `screenshots/` – Contains UI views (graph, alert, etc.)
 
 ## 📸 Screenshots
