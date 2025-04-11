@@ -1,5 +1,22 @@
-[GlassWire Settings - User Config Snapshot]
-Alert Types: Device Monitor, Suspicious Host
-Graph Interval: Real-Time (5s)
-Apps Monitored: Chrome, Zoom, Discord
-Data Plan Alerts: Enabled (50 GB/month)
+[GlassWire Configuration Snapshot]
+
+Version: Free (Basic) 3.3.x
+
+Monitored Features:
+- Bandwidth usage per application
+- IP connections and hostnames
+- Real-time graph view
+
+Active Alerts:
+- New device on network
+- Suspicious hostname
+- New application network access
+
+View Settings:
+- Graph: Real-time (5-second interval)
+- Usage: 1-day history
+- Things: Device monitor enabled
+
+Additional:
+- Auto-start on boot: Enabled
+- Alert sounds: Enabled
