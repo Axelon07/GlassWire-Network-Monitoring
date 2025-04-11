@@ -1,0 +1,3 @@
+1. Install Angry IP Scanner (from angryip.org)
+2. Scan local subnet (e.g., 192.168.1.1-254)
+3. Observe alerts in GlassWire under “Things” and “Graph” tabs.

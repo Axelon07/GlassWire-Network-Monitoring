@@ -1,0 +1,86 @@
+📘 Setup
+Operating System: Windows 10 (also works on Windows 11)
+
+Tool Used: GlassWire – Free Version (https://glasswire.com)
+
+Installation Method: Downloaded the official installer (GlassWireSetup.exe) and followed default installation prompts.
+
+Configuration after Installation:
+
+Allowed GlassWire to run at startup.
+
+Accepted default settings for notifications, graph interval, and bandwidth display.
+
+No need for command-line configuration; GUI-based setup made it beginner-friendly.
+
+Configurations
+GlassWire’s free version automatically begins monitoring after installation. The following settings and features were actively used and observed:
+
+✅ App Monitoring
+Under the "Usage" tab, the tool lists all apps consuming bandwidth.
+
+Chrome, Zoom, Discord, and Windows system processes were shown.
+
+Real-time bandwidth for each app was visualized.
+
+✅ Bandwidth Usage
+The "Graph" tab displayed real-time network usage with:
+
+Upload/download traffic (color-coded)
+
+Peaks indicating heavy data flow
+
+Mouse-over to view the specific app and time
+
+✅ Unknown Device Detection
+The "Things" tab scanned the local network.
+
+When a new device (e.g., from a friend’s phone or a simulated attacker) connected to the Wi-Fi:
+
+GlassWire displayed a popup alert: “New Device Connected”
+
+It listed the IP address, hostname, and MAC address of the device
+
+🧪 Use Case
+To simulate a realistic cybersecurity scenario, I performed the following test:
+
+🛠️ Simulated Threat:
+Tool Used: Angry IP Scanner (open-source IP scanning tool)
+
+Test Method:
+
+Ran Angry IP Scanner from another device on the same Wi-Fi network.
+
+Scanned the full subnet: 192.168.1.1 - 192.168.1.255
+
+Observed how GlassWire on my system detected this activity.
+
+🔔 Result:
+GlassWire generated an alert under the "Things" and "Alerts" tabs.
+
+Message: "New device detected on your network"
+
+Details included:
+
+Device MAC address and hostname
+
+Approximate connection time
+
+Traffic origin (via Graph tab)
+
+This simulated threat mimicked a potential network reconnaissance or unauthorized access, allowing for practical understanding of intrusion detection.
+
+⚠️ Issues Encountered
+❗ Limited Firewall Controls:
+The free version of GlassWire only visualizes network connections.
+
+Full control over blocking apps via firewall is a Pro-only feature.
+
+Workaround:
+
+Manually blocked a suspicious app using Windows Firewall via a custom PowerShell script (block-app.ps1).
+
+❗ Feature Restrictions:
+Some advanced analytics (like longer history, multiple alerts, and remote monitoring) are restricted to the paid version.
+
+Real-time monitoring and alerts, however, were fully functional in the free version and sufficient for this project.
