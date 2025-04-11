@@ -1,3 +1,17 @@
-1. Install Angry IP Scanner (from angryip.org)
-2. Scan local subnet (e.g., 192.168.1.1-254)
-3. Observe alerts in GlassWire under “Things” and “Graph” tabs.
+[Simulated Threat: Port Scan on Local Network]
+
+Goal: Simulate suspicious behavior to trigger GlassWire alerts.
+
+Tools Used:
+- Angry IP Scanner (https://angryip.org/)
+
+Steps:
+1. Connect a second device to the same Wi-Fi network.
+2. Install Angry IP Scanner on that device.
+3. Run a scan on the subnet (e.g., 192.168.1.1 to 192.168.1.254).
+4. On the main device running GlassWire:
+   - Observe the “Things” and “Alerts” tabs.
+   - Note any new devices or IP activity.
+
+Outcome:
+GlassWire detected the new device and displayed an alert with the MAC address and hostname.
